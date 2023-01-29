@@ -1,9 +1,10 @@
 {
-    "name": "FTK_Easy_Targetting",
-    "description": "An addon that removes AI tendency to attack weaker players.",
-    "version_number": "0.1.0",
-    "dependencies": [
-      "BepInEx-BepInExPack_ForTheKing-5.4.19",
-      "Amadare-HookGenPatcher-1.2.1"
-    ]
-  }
+  "name": "FTK_Easy_Targetting",
+  "description": "An addon that removes AI tendency to attack weaker players.",
+  "version_number": "0.1.0",
+  "website_url": "https://github.com/Dehydrated-Mud/FTK-Easy-Targetting",
+  "dependencies": [
+    "BepInEx-BepInExPack_ForTheKing-5.4.19",
+    "Amadare-HookGenPatcher-1.2.1"
+  ]
+}

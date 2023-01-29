@@ -25,18 +25,15 @@ namespace FTK_Easy_Targetting
                     x => x.MatchLdfld<GridEditor.FTK_proficiencyTable>("m_Tendency"),
                     x => x.MatchStloc(9)
                     );
-                c.Index += 11;
+                c.Index += 5;
                 c.Emit(OpCodes.Ldloc_S, (byte)9);
                 c.EmitDelegate<Func<CharacterStats.EnemyTendency, CharacterStats.EnemyTendency>>((et) =>
                 {
                     Logger.LogWarning(String.Format("We have entered the Delegate with tendency " + et.ToString()));
                     if (et == CharacterStats.EnemyTendency.AttackLeastHealth || et == CharacterStats.EnemyTendency.AttackLeastResist || et == CharacterStats.EnemyTendency.AttackLeastArmor || et == CharacterStats.EnemyTendency.AttackLeastEvade || et == CharacterStats.EnemyTendency.AttackHasNoSanctum)
                     {
-                        if (UnityEngine.Random.Range(0f, 1f) < 1.1f)
-                        {
-                            Logger.LogWarning("Setting tendency to none!");
-                            return CharacterStats.EnemyTendency.None;
-                        }
+                        Logger.LogWarning("Setting tendency to none!");
+                        return CharacterStats.EnemyTendency.None;
                     }
                     return et;
                 });
