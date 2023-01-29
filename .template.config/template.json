@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Amadare",
+    "classifications": [],
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    },
+    "identity": "FTKPlugin",
+    "name": "FTK Bepinex Plugin",
+    "shortName": "ftk-plugin",
+    "preferNameDirectory": true,
+    "sourceName": "FTKPlugin",
+    "placeholderFilename": ".keep"
+}

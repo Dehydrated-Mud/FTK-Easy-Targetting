@@ -1,0 +1,13 @@
+bin
+obj
+.idea
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
